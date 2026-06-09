@@ -1,0 +1,91 @@
+$bg-principal: #121212;
+$texto-blanco: #ffffff;
+$texto-gris-claro: #e5e5ea;
+$texto-mutado: #8e8e93;
+
+.home {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  // Añade estas 3 líneas para controlar el Footer de forma modular 🛠️
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; // 👈 Esto hace que el contenido central ocupe todo el espacio disponible, mandando al footer al fondo
+  padding: 2rem;
+  text-align: center;
+
+  .heroContent {
+    max-width: 650px;
+  }
+  .subtitulo {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $texto-mutado;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .titulo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 1.25rem;
+    color: $texto-blanco;
+  }
+
+  .descripcion {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: $texto-gris-claro;
+    margin-bottom: 2rem;
+  }
+}
+
+.botonEmpezar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: $texto-blanco;
+  color: $bg-principal;
+  border: none;
+  padding: 0.75rem 1.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  .icono {
+    transition: transform 0.2s ease;
+  }
+
+  &:hover .icono {
+    transform: translateX(3px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

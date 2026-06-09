@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+body {
+  background-color: #800000 !important; /* Color marrón/vino tinto */
+}

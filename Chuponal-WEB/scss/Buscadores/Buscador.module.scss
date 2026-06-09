@@ -1,0 +1,79 @@
+// .contenedorBuscador {
+//   position: absolute; // Flota sobre el contenido
+//   top: 1.5rem; // Alineado verticalmente arriba
+//   right: 2rem; // Alineado horizontalmente a la derecha
+//   z-index: 1000;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end; // Los elementos se alinean a la derecha
+//   transition: width 0.3s ease; // Animación suave al abrir/cerrar
+// }
+
+// .botonLupa {
+//   background: rgba(255, 255, 255, 0.1); // Casi transparente
+//   border: 1px solid rgba(255, 255, 255, 0.2); // Borde sutil
+//   padding: 10px;
+//   border-radius: 50%; // Circular
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: white; // Icono blanco
+//   box-shadow: 0 4px 6px rgba(0,0,0,0.1); // Sombra sutil
+//   transition: background 0.2s;
+
+//   &:hover { background: rgba(255, 255, 255, 0.2); }
+// }
+
+// .inputWrapper {
+//   display: flex;
+//   align-items: center;
+//   background: white; // Input blanco para contraste
+//   padding: 0.5rem 1rem;
+//   border-radius: 25px; // Esquinas muy redondeadas
+//   border: 1px solid #e2e8f0;
+//   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+//   width: 280px; // Tamaño compacto fijo
+
+//   input { 
+//     border: none; 
+//     outline: none; 
+//     flex: 1; 
+//     font-size: 0.9rem; 
+//     color: #1a1a1a; // Texto oscuro para lectura
+//     margin-right: 10px;
+//   }
+// }
+
+// .botonCerrar { 
+//   background: none; 
+//   border: none; 
+//   cursor: pointer; 
+//   display: flex; 
+//   color: #94a3b8; // Color neutro para la 'X'
+//   padding: 0; 
+
+//   &:hover { color: #f43f5e; } // Rojo suave al pasar el ratón
+// }
+
+// .listaResultados {
+//   margin-top: 8px; // Separación del input
+//   width: 280px; // Mismo ancho que el input
+//   background: white;
+//   border-radius: 12px;
+//   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+//   border: 1px solid #e2e8f0;
+//   overflow: hidden;
+//   z-index: 100;
+// }
+
+// .resultado {
+//   padding: 12px;
+//   cursor: pointer;
+//   border-bottom: 1px solid #f1f5f9;
+  
+//   &:hover { background: #f8fafc; }
+//   &:last-child { border-bottom: none; }
+
+//   h4 { margin: 0; font-size: 0.85rem; color: #334155; }
+// }
