@@ -7,9 +7,9 @@ import { home } from "../../const/index";
 export default function InformacionWeb({ onVolver }) {
   const [sugerencia, setSugerencia] = useState("");
   const [mostrarContribucion, setMostrarContribucion] = useState(false);
-    useScrollTop();
+  useScrollTop();
   const enviarWhatsApp = () => {
-    const telefono = import.meta.env.VITE_WS_NUMBER;  
+    const telefono = import.meta.env.VITE_WS_NUMBER;
     const mensaje = encodeURIComponent(`Sugerencia para la pagina de Chuponal: ${sugerencia}`);
     window.open(`https://wa.me/${telefono}?text=${mensaje}`, "_blank");
   };
@@ -40,7 +40,7 @@ export default function InformacionWeb({ onVolver }) {
             </button>
           ) : (
             <>
-              <textarea 
+              <textarea
                 className={styles.inputSugerencia}
                 value={sugerencia}
                 onChange={(e) => setSugerencia(e.target.value)}

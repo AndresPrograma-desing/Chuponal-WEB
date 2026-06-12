@@ -29,12 +29,21 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 600px) {
+    font-size: 1.75rem;
+  }
 }
 
 .descripcionObjetos {
   color: #aaaaaa;
   font-size: 1rem;
   margin-bottom: 3rem;
+
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .gridObjetos {
@@ -42,6 +51,11 @@
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
+
+  @media (max-width: 600px) {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .tarjetaObjeto {

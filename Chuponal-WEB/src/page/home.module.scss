@@ -42,6 +42,10 @@ $texto-mutado: #8e8e93;
     letter-spacing: 1px;
     margin-bottom: 1.25rem;
     color: $texto-blanco;
+
+    @media (max-width: 600px) {
+      font-size: 2.25rem;
+    }
   }
 
   .descripcion {
@@ -49,6 +53,11 @@ $texto-mutado: #8e8e93;
     line-height: 1.6;
     color: $texto-gris-claro;
     margin-bottom: 2rem;
+
+    @media (max-width: 600px) {
+      font-size: 0.95rem;
+      padding: 0 0.5rem;
+    }
   }
 }
 

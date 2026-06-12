@@ -13,6 +13,10 @@ $texto-mutado: #8e8e93;
   padding: 4rem 2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   animation: fadeIn 0.5s ease-out forwards;
+
+  @media (max-width: 600px) {
+    padding: 2rem 1rem;
+  }
 }
 
 .bloqueLectura {
@@ -22,7 +26,7 @@ $texto-mutado: #8e8e93;
   padding: 3rem;
 
   @media (max-width: 600px) {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.25rem;
   }
 }
 
@@ -43,6 +47,11 @@ $texto-mutado: #8e8e93;
   letter-spacing: -0.5px;
   color: $texto-blanco;
   margin-bottom: 2rem;
+
+  @media (max-width: 600px) {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .cuerpoTexto {
@@ -56,6 +65,11 @@ $texto-mutado: #8e8e93;
     color: $texto-gris-claro;
     margin: 0;
     text-align: justify;
+
+    @media (max-width: 600px) {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
   }
 
   .notaEdicion {
@@ -70,9 +84,13 @@ $texto-mutado: #8e8e93;
 .enrutamiento {
   margin-top: 3rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   border-top: 1px solid $borde-sutil;
   padding-top: 2rem;
+
+  @media (max-width: 480px) {
+    gap: 0.75rem;
+  }
 }
 
 .botonSiguiente {
